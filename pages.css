@@ -1,0 +1,284 @@
+body{
+    background-color: #f1f1f1;
+    width:100vw;
+    height:100vh;
+    margin: auto;
+    
+}
+.header{
+    display:flex;
+    width:100%;
+    min-height:10vw;
+    max-height: 12vw;
+    position: fixed;
+    background-color: #f1f1f1;
+    top:0;
+    justify-content: space-between;
+    line-height: 1;
+    padding: 5px 0;
+}
+#header{
+  
+    font-weight: 800;
+    color:rgb(23, 60, 253);
+    font-size:5vw;
+    margin-top: 0;
+    text-shadow:1px 1px 3px rgba(243, 208, 13, 0.884);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+#solid{
+    width:30px;
+    fill:blue;
+    height:7vw;
+    box-shadow: 3px 3px 3px yellow;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+.main-content{
+    padding:20px 0;
+    width:100vw;
+    height:auto;
+    margin:0 auto;
+
+}
+.content{
+    margin:0 auto;
+    width:80vw;
+    height:auto;
+    background-color: transparent;
+}
+
+* :hover{
+color:black;
+}
+.nlist{
+    width:40vw;
+    box-shadow: 3px 3px 3px gold;
+    height:30%;
+    background-color: rgb(250, 249, 249);
+    border-radius: 10px;
+    font-size:7vw;
+    
+    display:none;
+    position: fixed;
+    top:12vw;
+    right:0;
+    backdrop-filter: 5px 5px 5px black;
+}
+.block{
+    width:40vw;
+    box-shadow: 3px 3px 3px rgb(0, 38, 255);
+    height:30%;
+    background-color: rgb(250, 249, 249);
+    border-radius: 10px;
+    font-size:7vw;
+    z-index: 999;
+    position: fixed;
+    top:12vw;
+    right:0;
+    backdrop-filter: 3px;
+    display:block;
+}
+
+.inside-text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 1200;
+    text-shadow:0px 3px 0px rgb(14, 14, 13);
+    font-size:25px;
+    letter-spacing: 3px;
+    margin-left: 0 auto;
+    color:rgba(4, 0, 255, 0.616);
+    width:90vw;
+    min-height:70vw;
+    background-color: transparent;
+}
+#line{
+    margin: 60px auto;
+    width:50%;
+    height:3px;
+    background-color: blue;
+    animation-name: quote;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+#myquote{
+    padding:10px;
+    margin: 10% ;
+    margin-left: 0;
+    justify-self: center;
+    font-style: bold;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px black;
+    color:#f1f1f1;
+    overflow: hidden;
+  
+}
+#plus{
+    margin:0 auto;
+    animation-name:tech;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+}
+@keyframes quote{
+    0%{
+        margin:85% auto  0;
+    }
+    50%{
+        margin:90% auto 0;
+    }
+    100%{
+        margin:85% auto 0;
+    }
+}
+@keyframes tech{
+    0%{
+        color:red;
+    }
+    50%{
+        color: yellow;
+    }
+    100%{
+        color: blue;
+    }
+
+}
+
+#button{
+    box-shadow: 3px 5px 3px black;
+    margin:15% 20% ;
+    border-radius: 20px;
+    color: blue;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    width:60%;
+    height:15vw;
+    background-color: rgba(169, 169, 169, 0);
+}
+.my-work{
+    display:flex;
+    align-self: center;
+    justify-content: center;
+    margin: 10% auto;
+    font-size: 2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+.work-project{
+    margin:40% 5%;
+    background-color: green;
+    width:90%;
+    height:250px;
+    border:1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+.correct{
+    margin:40% 10%;
+    background-color: red;
+    width:90%;
+    height:420px;
+    border:1px solid black;
+    display: flex;
+    flex-direction: column;
+    
+}
+.linky{
+    display: flex;
+    flex-direction: column;
+    margin: auto auto 0;
+    background-color: yellow;
+    box-shadow: 3px 3px 3px black;
+    width:90%;
+    height:5vh;
+    border:1px solid black;
+}
+
+.tools{
+    width:100%;
+    height:60vh;
+    background-color: darkblue;
+    overflow: auto;
+}
+#my-tools{
+    display: flex;
+    color:rgb(255, 251, 0);
+  margin: 0 auto;
+  text-shadow:3px 3px 3px black;
+}
+.collabo{
+    width:100%;
+    height:40vh;
+    border:1px solid black;
+    background-color: transparent;
+    margin-top:30%;
+    
+}
+#sala{
+    margin-bottom:0 ;
+    width:30%;
+    height:100%;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: rgb(255, 196, 0);
+    box-shadow: 3px 3px 3px black;
+}
+.ahan{
+    display: flex;
+    width:100%;
+    height:20%;
+    justify-content: space-around;
+}
+.about-me{
+    display:none;
+    width:90%;
+    margin:0 auto;
+}
+.show{
+    display: block;
+    width:90%;
+    margin:0 auto;
+}
+.hide{
+    display:none;
+}
+#address{
+    text-decoration: none;
+    color: rgb(249, 253, 21);
+    
+    font-weight: 900;
+    text-shadow: 3px 3px 3px black;
+}
+.last-text{
+    display: block;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.see-more{
+    margin: 5% 15% 5%;
+    width:70vw;
+    height:40px;
+    box-shadow:3px 3px 3px black;
+    font-size:1.3rem;
+    justify-content: space-around;
+    background-color: yellow;
+}
+.bye-box{
+    color: yellow;
+    display: flex;
+    border-radius: 10px;
+    width:100vw;
+    height:auto;
+    justify-content: space-between;
+    background-color: rgb(16, 16, 100);
+    
+}
+.part{
+    width:33%;
+    background-color: transparent;
+}
+.max-width{
+    display: none;
+}
