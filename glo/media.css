@@ -1,0 +1,165 @@
+@media  (min-width:570px){
+
+    #solid{
+        display:none;
+    }
+    .header{
+        display:flex;
+        width:100%;
+        min-height:8px;
+        max-height: 12vw;
+        position: fixed;
+        background-color: #f1f1f1;
+        top:0;
+        justify-content: space-between;
+        line-height: 1;
+        padding: 5px 0;
+    }
+    #header{
+        font-size:200%;
+    }
+    #tech{
+        font-size: 80px;
+    }
+    .my-work{
+        margin: 0 auto;
+    }
+    .correct{
+        margin: 3% auto;
+    }
+    .max-width{
+        justify-content: space-around;
+        position: absolute;
+        right:7%;
+        display:flex;
+        width:40%;
+        height:10vh;
+        background-color: transparent;
+    }
+    #address :hover{
+        color:yellow;
+    }
+    .cont{
+        display: flex;
+    }
+    #address{
+        color:blue;
+        text-shadow: 2px 2px 2px black;
+        font-size: 120%;
+    }
+    #button{
+        width:40%;
+        height:40px;
+        margin: 0% 5% 0 25%;
+        display: none;
+    }
+    .inside-text{
+        background-color: transparent;
+        width:70vw;
+        min-height:40vw;
+        height: auto;
+        margin-top: 0;
+
+    }
+    .content{
+        background-color: transparent;
+        height: auto;
+    }
+    #tech{
+        height:199px;
+        animation-duration: 1;
+    }
+    #myquote :hover{
+        color:yellow;
+    }
+    #myquote{
+        text-shadow: 3px 3px 3px black;
+        color:#f1f1f1;
+        margin-left: 25%;
+        margin-bottom: 0;
+        font-size:2.5rem;
+        font-weight: 900%;
+        font-family: Cambria,
+         Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    @keyframes quote{
+        0%{
+            margin:0% auto  0;
+        }
+        50%{
+            margin:0% auto 0;
+        }
+        100%{
+            margin:0% auto 0;
+        }
+    }
+    #line{
+        margin:20% auto 0;
+    }
+    .work-project{
+        width:50%;
+        margin:0% auto 0 0;
+    }
+    .linky{
+        width:50%;
+        margin:0% auto 0 0;
+        display: none;
+    }
+    .correct{
+        margin-left: 5%;
+        width:90%;
+        height: auto;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+    }
+    .bye-box{
+        bottom:-3%;
+        height:17vh;
+        width:90wh;
+        justify-content: safe;
+        align-items: safe;
+        flex-wrap: nowrap;
+    }
+    
+    .about-me{
+        margin:8% auto;
+    }
+    .see-more{
+        width:50vw;
+        margin-left:25%;
+    }
+    /* the logo attributes are here*/
+    .main{
+        width:30px;
+        height:30px;
+        margin:auto auto;
+    }
+    .face{
+        width:15px;
+        height:25px;
+        background-color: black;
+        border-radius: 20px 20px 50px 50%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .eye{
+        width: 5px;
+        height:10px;
+        background-color: white;
+        border-radius: 50%;
+        margin-top:20%;
+    }
+    .eye1{
+        width: 5px;
+        height:10px;
+        background-color: white;
+        border-radius: 50%;
+        margin-top: 20%;
+    }
+    /*stops*/
+    .alaye{
+        display:flex;
+        background-color: transparent;
+    }
+}

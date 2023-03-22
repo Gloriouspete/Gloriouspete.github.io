@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chat Registration</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+ 
+		.container {
+			margin: 50px auto;
+			max-width: 600px;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+		}
+ 
+		h1 {
+			font-size: 36px;
+			margin-top: 0;
+		}
+ 
+		form {
+			display: flex;
+			flex-direction: column;
+		}
+ 
+		label {
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+ 
+		input[type="text"] {
+			font-size: 16px;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			margin-bottom: 20px;
+		}
+ 
+		button[type="submit"], button[type="button"] {
+			font-size: 18px;
+			padding: 10px;
+			background-color: #4286f4;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+ 
+		button[type="submit"]:hover, button[type="button"]:hover {
+			background-color: #3270f0;
+		}
+ 
+		.chat-code {
+			margin-top: 20px;
+			font-size: 24px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Join the Chat</h1>
+		<form id="chat-form">
+			<label for="chat-code">Enter your 6-digit chat code:</label>
+			<input type="text" id="chat-code" name="chat-code" placeholder="e.g. 325142" maxlength="6" required>
+			<button type="submit" id="join-btn">Join Chat</button>
+			<div class="chat-code" id="new-chat-code"></div>
+			<button type="button" id="new-chat-btn">Create New Chat</button>
+		</form>
+	</div>
+	<script>
+		const chatForm = document.getElementById("chat-form");
+		const chatCodeInput = document.getElementById("chat-code");
+		const newChatCodeDisplay = document.getElementById("new-chat-code");
+		const newChatBtn = document.getElementById("new-chat-btn");
+ 
+		chatForm.addEventListener("submit", (e) => {
+			e.preventDefault();
+ 
+			const chatCode = chatCodeInput.value;
+ 
+			if (isValidChatCode(chatCode)) {
+				window.location.href = `https://example.com/chat/${chatCode}`;
+			} else {
+				alert("Invalid chat code. Please enter a 6-digit number.");
+			}
+		});
+ 
+		newChatBtn.addEventListener("click", () => {
+			const newChatCode = generateChatCode();
+			newChatCodeDisplay.innerText = newChatCode;
+			chatCodeInput.value = newChatCode;
+			window.location.href = `https://example.com/chat/${newChatCode}`;
+		});
+ 
+		function isValidChatCode(chatCode) {
+			// Check if chat code is exactly 6 digits long
+			if (chatCode.length !== 6) {
+				return false;
+      }
+ 
+		// Check if chat code only contains digits
+		if (!/^\d+$/.test(chatCode)) {
+			return false;
+		}
+ 
+		return true;
+	}
+ 
+	function generateChatCode() {
+		// Generate a random 6-digit number
+		const chatCode = Math.floor(Math.random() * 900000) + 100000;
+		return chatCode.toString();
+	}
+</script>
