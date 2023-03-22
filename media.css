@@ -39,9 +39,6 @@
     #address :hover{
         color:yellow;
     }
-    *{
-        border:2px solid red;
-    }
     .cont{
         overflow: auto;
         height:100%;
@@ -71,7 +68,7 @@
         display: none;
     }
     .inside-text{
-        background-color: red;
+        background-color: transparent;
         width:55vw;
         min-height:40vw;
         height: auto;
@@ -117,7 +114,7 @@
         margin-top: 5%;
         width:100vw;
         height:auto;
-        background-color: green;
+        background-color: transparent;
         display: flex;
     }
     .work-project{
@@ -131,7 +128,7 @@
         margin-left: 2.5%;
         width:45%;
         height: 300px;
-        background-color: red;
+        background-color: transparent;
         display: flex;
         flex-direction: row;
     }
